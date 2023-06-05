@@ -1,0 +1,50 @@
+body{
+	
+	 text-align: center;
+ 
+}
+.titulo{
+	font-family:'BEBAS';
+	font-size: 60px;
+	text-align: center;
+
+}
+
+
+body{
+ 
+  font-family: 'bebas';
+ 
+}
+.titulo{
+  text-align:center;
+  color:black;
+  letter-spacing: -7px;
+  font-weight:700;
+ 
+  animation:blur .75s ease-out infinite;
+  text-shadow:0px 0px 5px #fff,
+      0px 0px 7px #fff;
+}
+
+@keyframes blur{
+  from{
+      text-shadow:0px 0px 10px #fff,
+      0px 0px 10px #fff, 
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #7B96B8,
+      0px 0px 150px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px -10px 100px #7B96B8,
+      0px -10px 100px #7B96B8;}
+}

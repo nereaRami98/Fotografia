@@ -1,0 +1,560 @@
+
+
+body {
+   
+  font-family: 'Raleway';
+  font-size: 14px;
+}
+
+.titulo{ 
+ font-family: 'BEBAS';
+ color: orange;
+ }
+
+/*----------*/
+.navegacion{
+  width: 100%;
+  float: left;
+
+
+ 
+}
+
+.navegacion nav{
+  width: 200%;
+  max-width: 1100px;
+  
+  margin: 40px auto;
+  position: relative;
+  
+}
+
+.navegacion nav ul{
+  list-style: none;
+  
+  display: inline-block;
+}
+
+.navegacion nav > ul > li{
+  display: inline-block;
+}
+
+.navegacion nav > ul > li > a{
+  color: white;
+
+  text-decoration: none;
+  display: block;
+  padding: 20px;
+}
+
+.navegacion nav > ul > li > a span{
+  font-size: 20px;
+  position: absolute;
+  bottom: -8px;
+  display: none;
+}
+
+.navegacion nav > ul > li:hover span{
+  display: block;
+
+}
+
+.navegacion nav ul li .submenu{
+  background: #fff;
+  padding: 20px;
+
+  position: absolute;
+  display: none;
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.24);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.24);
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.24);
+}
+
+.navegacion nav ul li:hover .submenu{
+  display: flex;
+  position: absolute;
+  z-index: 1;
+
+}
+
+.navegacion nav ul li .submenu .submenu-items{
+  margin: 0 20px;
+
+   
+
+}
+
+.navegacion nav ul li .submenu .submenu-items p{
+  font-weight: 600;
+
+  width: 110px;
+
+  display: block;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #565656;
+  margin-bottom: 10px;
+}
+
+.navegacion nav ul li .submenu .submenu-items a{
+  color: black;
+
+  text-decoration: none;
+  margin: 50px 0;
+  display: block;
+
+}/*slide*/
+.atardecer{
+     width: 100%; /*Ancho de la imagen */
+     height: 700px;  /*Alto*/
+     margin-top: -150px;
+    
+}
+
+
+/*carrusel*/
+
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 60%;
+      margin: auto;
+  }
+
+  /*ACORDEON*/
+
+ h1 {
+text-align: center;
+}
+.half {
+  
+  width: 50%;
+  padding: 0 1em;
+}
+/* Acordeon styles */
+.tab {
+  position: relative;
+  margin-bottom: 1px;
+  width: 100%;
+  color: #fff;
+  overflow: hidden;
+}
+.tab input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+.tab label {
+  position: relative;
+  display: block;
+  padding: 0 0 0 1em;
+  background: orange;
+  font-weight: bold;
+  line-height: 3;
+  cursor: pointer;
+}
+.blue label {
+  background: #2980b9;
+}
+.tab-content {
+  max-height: 0;
+  overflow: hidden;
+  background: black;
+  -webkit-transition: max-height .35s;
+  -o-transition: max-height .35s;
+  transition: max-height .35s;
+}
+.blue .tab-content {
+  background: #3498db;
+}
+.tab-content p {
+  margin: 1em;
+}
+/* :checked */
+.tab input:checked ~ .tab-content {
+  max-height: 100vh;
+}
+
+/* Icon */
+.tab label::after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  width: 3em;
+  height: 3em;
+  line-height: 3;
+  text-align: center;
+  -webkit-transition: all .35s;
+  -o-transition: all .35s;
+  transition: all .35s;
+}
+.tab input[type=checkbox] + label::after {
+  content: "+";
+}
+.tab input[type=radio] + label::after {
+  content: "\25BC";
+}
+.tab input[type=checkbox]:checked + label::after {
+  transform: rotate(315deg);
+}
+.tab input[type=radio]:checked + label::after {
+  transform: rotateX(180deg);
+}
+
+/*TABLA*/
+
+.letra ul{
+  color: white;
+
+}
+table {
+  text-align: center;
+  width:100%;
+  color: white;
+}
+td {
+  border:1px solid white;
+  width:20.20%;
+  font-size:30px
+}
+
+/*video*/
+.video{
+  border: none;
+
+}
+
+ 
+/*CONTACTANOS Y UBICACION*/
+.site-footer
+{
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+ 
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+ 
+
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+  
+  /*--------------------BOTONES--------------*/
+   a.boton{
+     position: absolute;
+      top: 90%;
+      left: 19%;
+      
+      
+  font-family: 'Montserrat', sans-serif;
+  text-transform:uppercase;
+  letter-spacing:5px;
+  display:inline-block;
+  margin: 15px 20%;
+  text-decoration:none;
+  color:#fff;
+  padding:20px 40px;
+  border: 2px solid #fff;
+  border-radius:5px;
+
+  overflow:hidden;
+  transition: all ease 400ms;
+  -webkit-transition: all ease 400ms;
+  -moz-transition: all ease 400ms;
+  -ms-transition: all ease 400ms;
+}
+a.boton span{
+  display:block;
+  position:absolute;
+  background: #E91E63;
+  transition: all ease 400ms;
+  -webkit-transition: all ease 400ms;
+  -moz-transition: all ease 400ms;
+  -ms-transition: all ease 400ms;
+  z-index:-1;
+}
+
+a.boton span.top{
+  left:0;
+  top:-50%;
+  right:0;
+  bottom:100%;
+  border-radius:50%;
+}
+
+a.boton span.left{
+  left:-20%;
+  top:0;
+  right:110%;
+  bottom:0;
+  transform:skewX(-30deg);
+}
+
+a.boton span.right{
+  left:100%;
+  top:0;
+  right:0;
+  bottom:0;
+}
+
+a.boton span.bottom{
+  left:0;
+  top:100%;
+  right:0;
+  bottom:0;
+}
+
+a.boton span.center{
+  left:0;
+  top:0;
+  right:0;
+  bottom:0;
+  width:50px;
+  height:50px;
+  border-radius:100px;
+  margin:auto;
+  transform:scale(0,0);
+  transition: all ease 500ms;
+  -webkit-transition: all ease 500ms;
+  -moz-transition: all ease 500ms;
+  -ms-transition: all ease 500ms;
+  z-index:-1;
+}
+
+a.boton:hover{
+  color:#fff;
+  border: 2px solid #E91E63;
+}
+
+a.boton:hover span.top{
+  top:0;
+  bottom:0;
+  border-radius:0;
+}
+
+a.boton:hover span.left{
+  right:-10%;
+}
+
+a.boton:hover span.right{
+  left:0;
+}
+
+a.boton:hover span.bottom{
+  top:0;
+}
+
+a.boton:hover span.center{
+  transform:scale(2,2);
+  width:200px;
+  height:200px;
+}
+
+
+/*--------------------------------------------- position: relative;
+    top: 100%;
+      left: 65%;-*/
+  .conta {
+  float: right;
+      width: 300px;
+      height: 400px;
+      border: 2px solid #ccc;
+      padding: 20px;
+      text-align: center;
+       margin-bottom: 40px;
+      }
+ .contai {
+  float: left;
+      width: 400px;
+      height: 400px;
+      border: 2px solid #ccc;
+      padding: 20px;
+      text-align: center;
+     
+       margin-bottom: 40px;
+     
+    }
+    .cielos{
+      max-width: 200%;
+      max-height: 200px;
+    }
+.cielo{
+      max-width: 100%;
+      max-height: 200px;
+    }
+    .button {
+      margin-top: 20px;
+      padding: 15px 20px;
+      background-color: #f0f0f0;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      color: #333;
+    }
+
+/*-----------------tarjeta-----------*/
+.textoo{
+  color: white;
+  font-size:~x;
+  font-family: 'bebas';
+}
+/*-----------------texto e imagen-----------------*/
+    .fotoimg{
+  border: none;
+
+
+
+
+}
+
+
